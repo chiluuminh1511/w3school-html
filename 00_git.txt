@@ -1,0 +1,6 @@
+cai dat git tren linux va fix bug theo google
+use git on vscode
+https://code.visualstudio.com/docs/sourcecontrol/overview
+
+:q dung de exit vim
+ctrl+l de clear terminal
