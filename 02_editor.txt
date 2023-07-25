@@ -1,0 +1,3 @@
+w3school khuyen khich su dung editor co ban 
+dung vscode cung on 
+vscode ho tro them nhieu extention huu ich
