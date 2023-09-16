@@ -1,0 +1,15 @@
+Favicon là một hình ảnh nhỏ được hiển thị bên cạnh tiêu đề trang trong tab trình duyệt.
+
+Cách thêm Favicon trong HTML
+Bạn có thể sử dụng bất kỳ hình ảnh nào bạn thích làm biểu tượng yêu thích của mình. Bạn cũng có thể tạo favicon của riêng mình trên các trang web như https://www.favicon.cc .
+
+Mẹo: Favicon là một hình ảnh nhỏ, vì vậy nó phải là một hình ảnh đơn giản với độ tương phản cao.
+
+Một hình ảnh yêu thích được hiển thị ở bên trái của tiêu đề trang trong tab trình duyệt, như thế này:
+
+Ví dụ về biểu tượng yêu thích
+Để thêm biểu tượng yêu thích vào trang web của bạn, hãy lưu hình ảnh biểu tượng yêu thích của bạn vào thư mục gốc của máy chủ web hoặc tạo một thư mục trong thư mục gốc có tên là hình ảnh và lưu hình ảnh biểu tượng yêu thích của bạn vào thư mục này. Tên phổ biến cho hình ảnh favicon là "favicon.ico".
+
+Tiếp theo, thêm một <link>phần tử vào tệp "index.html" của bạn, sau <title>phần tử, như sau:
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">

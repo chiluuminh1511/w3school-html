@@ -1,0 +1,73 @@
+<!-- đoạn văn thường bắt đầu từ dòng mới và sử dụng block hoặc text
+thẻ <p> xác định văn bản
+có khoảng trắng mặc định giữa các đoạn (margin) -->
+<!doctype html>
+<html>
+
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <!-- bạn không chắc cách html xuất hiện trên màn hình (thay đổi kích cỡ cửa số thì xuất hiện kết quả khác nhau)
+    với HTML thì bạn không thể hiện thị thêm khoảng cách hay dòng mới vào HTML code
+    trình duyệt sẽ mặc định xóa những khoảng trống thêm đó khi hiển  thị
+    -->
+    <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+
+    <p>
+        This paragraph
+        contains a lot of spaces
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+    <!-- quy tắc thanh ngang (horizontal rules):
+    thẻ <hr> xác định thanh ngắt trong trang HTML, Hầu hết hiện thị như là thanh ngang
+    phần tử <hr> được xác định để phân tách nội dung 
+    <hr> là thẻ trống nên không có end tag 
+    -->
+    <h1>This is heading 1</h1>
+    <p>This is some text.</p>
+    <hr>
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+    <hr>
+    <!-- line break
+    <br> xác định ngắt dòng
+    sử dụng <br> để ngắt dòng nếu bạn không muốn qua đoạn mới 
+    <br> là thẻ trống nên không có end tag
+    -->
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    <!-- the poem problem:
+    đoạn thơ sau đây chỉ hiện thị trong 1 dòng
+    -->
+    <p>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+    </p>
+    <!-- giải pháp <pre> 
+    thẻ pre xác định văn bản được định dạng sẵn
+    -->
+    <pre>
+        My Bonnie lies over the ocean.
+      
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.
+    </pre>
+    
+</body>
+
+</html>

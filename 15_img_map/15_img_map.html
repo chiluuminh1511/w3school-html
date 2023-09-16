@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    chọn 1 khu vực trên ảnh để tạo tag 
+    giá trị usemap và # thể hiện mối liên hệ giữa hình ảnh và map 
+
+ -->
+<body>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+    <!-- shape
+    rect - defines a rectangular region
+    poly - defines a polygonal region
+    circle - defines a circular region  
+    default - defines the entire region
+
+    -->
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" onclick="myFunction()">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" onclick="myFunction()">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" onclick="myFunction()">
+    </map>
+</body>
+ <!-- khu vực có thể được kết hợp với js -->
+<script>
+    function myFunction() {
+      alert("You clicked the coffee cup!");
+    }
+    </script>
+
+</html>

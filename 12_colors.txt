@@ -1,0 +1,36 @@
+
+trong HTML các màu được chỉ định với tên màu xác định trước hoặc với
+các giá trị RGB,HẼ,HSL,RGBA,HSLA
+
+tên màu: color names
+trong HTML một số màu chỉ định có thể được gọi bằng tên màu (color name)
+html hỗ trợ 140 tên màu cơ bản
+
+màu nền (background color)
+bạn có thể đặt màu nền cho thẻ html 
+văn bản màu (text color)
+bạn có thể đặt màu cho văn bản
+màu viền (border color)
+bạn có thể đặt màu cho viền
+
+Giá trị mà (color values) 
+RGB đại diện cho các nguồn sáng đỏ, xanh lá cây, xanh dương
+RGBA là phần mở rộng của RGB với kênh alpha(độ mờ)
+Mỗi tham số(đỏ lục lam xác định cường độ của màu có giá trị từ 0 đến 255
+256*256*256=16777216
+
+Sắc thái của màu xám thường được xác định bằng các giá trị bằng nhau
+cho cả 3 tham số
+
+Màu thập lục phân được chỉnh định bằng #RRGGBB trong đó các số nguyên thập lục phân
+RR,GG,BB
+
+Giá trị màu HSL
+
+một màu có thể được chỉ định bằng cách sử dụng sắc độ, độ bão hòa, và độ sáng 
+hsl(hue,saturation,lightness)
+
+Hue là bánh xe màu xác 360 độ: 0, đỏ 120, xanh lá cây, 240, xanh da trời
+saturation là giá trị phần trăm. 0% là màu xám. 100% là màu đầy đủ
+lightness cũng là giá trị phần trăm. 0% là màu đen, 100% là màu trắng
+tương tự với RGB giá trị alpha thể hiện độ mờ của màu

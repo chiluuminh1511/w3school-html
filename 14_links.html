@@ -1,0 +1,109 @@
+<!-- 
+    html links là hyperlink (siêu liên kết) 
+    khi bại di chuột vào đường dẫn. con trỏ chuột sẽ đổi sang hình bàn tay với ngón trỏ
+    link không nhất thiết là text. có thể là hình ảnh hoặc một thẻ html nào khác
+    thẻ <a> chỉ định link với cú pháp
+    <a href="url">link text</a>
+    phần quan trọng nhất của thẻ <link> là thuộc tính herf 
+    theo mặc định
+        đường link chưa được ghé thăm sẽ có màu xanh
+        đường link đã được ghé thăm sẽ có màu tím
+        đường link đang kích hoạt sẽ có màu đỏ
+        có thể cài đặt css cho đường link
+ -->
+<!-- 
+    theo mặc định. đường link được nhấp vào sẽ hiện thị ở cửa sổ web hiện tại. 
+    ta sử dụng thuộc tính target để chỉ định nó 
+        _self: mặc định. mở tài liệu ở cửa sổ/tab vừa mới được nhấp chuột vào
+        _blank: mở ở một cửa số mới
+        _parent: mở tài liệu ở khung cha 
+        _top: mở tài liệu ở khung trên cùng
+  -->
+<!-- 
+    Absolute URLs vs. Relative URLs
+    đường dẫn tuyệt đối và tương đối
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+-->
+<!doctype html>
+<html>
+
+<head>
+    <!-- màu sắc của links có thể sử dụng css để thay đổi -->
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        /* tương tự màu sắc của các nút cũng có thể sử dụng CSS để tùy chỉnh */
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://example.com" target="_blank">Open this link blank<br></a>
+    <a href="https://example.com" target="_parent">Open this link parent<br></a>
+    <a href="https://example.com" target="_self">Open this link self<br></a>
+    <a href="https://example.com" target="_top">Open this link top<br></a>
+    <!-- sử dụng hình ảnh như đường dẫn chỉ cần bỏ thẻ <img> trong thẻ <a>-->
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+    <!-- đường dẫn tới địa chỉ email -->
+    <a href="mailto:someone@example.com">Send email</a>
+    <!-- nút bấm như một đường dẫn -->
+    <button onclick="document.location='default.asp'">HTML tutorial</button>
+    <!-- link tittles thuộc tính tittle mô tả thêm thông tin về thẻ-->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+</body>
+
+</html>
+<!-- 
+    bookmarks có thể sử dụng với những trang web rất dài
+    để tạo bookmark - trước tiên tạo bookmark và đường link dẫn đến nó
+    khi nhấp chuột vào link thì trang web sẽ kéo tới vị trí của bookmark
+    sử dụng thuộc tính id để tạo bookmark
+    <h2 id="C4">Chapter 4</h2>
+    sau đó thêm đường dẫn trỏ tới bookmark 
+    <a href="#C4">Jump to Chapter 4</a>
+    bạn cũng có thể  thêm đường dẫn tới bookmark từ trang web khác
+    <a href="14_links.html#C4">Jump to Chapter 4</a>   
+
+ -->

@@ -1,0 +1,12 @@
+Mỗi trang web nên có một tiêu đề trang để mô tả ý nghĩa của trang.
+
+Phần <title>tử thêm tiêu đề vào trang của bạn:
+Tiêu đề nên mô tả nội dung và ý nghĩa của trang.
+
+Tiêu đề trang rất quan trọng đối với việc tối ưu hóa công cụ tìm kiếm (SEO). Văn bản được thuật toán của công cụ tìm kiếm sử dụng để quyết định thứ tự khi liệt kê các trang trong kết quả tìm kiếm.
+
+yếu <title>tố:
+
+xác định tiêu đề trên thanh công cụ của trình duyệt
+cung cấp một tiêu đề cho trang khi nó được thêm vào mục yêu thích
+hiển thị tiêu đề cho trang trong kết quả của công cụ tìm kiếm

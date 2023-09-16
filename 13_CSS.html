@@ -1,0 +1,62 @@
+<!-- 
+    CSS là viết tắt của cascading style sheets
+    CSS tiết kiệm nhiệt công việc. Nó có thể kiểm soát bố cục nhiều trang web cùng một lúc
+    CSS được sự dụng để định dạng bố cục một trang web 
+    màu sắc, phông chữ, kích cỡ văn bản, khoảng cách giữa các phần tử , cách hiển thị khác nhau tùy theo kích thước và màn hình, v,v....
+    Cascding nghĩa là kiểu được cập nhật ở phần tử cha cũng có tác dụng tới phần tử con với chung phần tử cha 
+    CSS có thể được thêm vào tài liệu HTML bằng 3 cách
+        Inline: sử dụng thuộc tính attribute style trong thẻ html  
+        Internal: sử dụng thẻ <style> trong phần <head>
+        External: sử dụng thẻ <link> để link tới file css ở ngoài
+    Các phổ biến nhất là external
+ -->
+
+<!doctype html>
+<html>
+
+<head>
+    <!-- internal chỉ tác dụng lên 1 trang html 
+        được định nghĩa ở phần <head> với thẻ <style>
+    -->
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+        /* 
+        color cho màu chữ 
+        font-family cho kiểu chữ
+        font-size cho kích cỡ chữ
+        */
+            color: blue;
+            font-family: verdana;
+            font-size: 300%;
+        }
+
+        p {
+            color: red;
+            font-family: courier;
+            font-size: 160%;
+            /* viền bên ngoài bao bọc thẻ html */
+            border: 2px solid powderblue;
+            /* khoảng cách giữa chữ và viền */
+            padding: 30px;
+            /* khoảng cách giữa viền thẻ này và thẻ khác */
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS inline. áp dụng cho 1 phần tử (thẻ)
+         thêm trực tiếp vào thẻ với thuộc tính style
+     -->
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p>
+    <!-- internal -->
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+</body>
+
+</html>

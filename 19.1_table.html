@@ -1,0 +1,51 @@
+<!-- 
+Kích thước bảng HTML
+    Sử dụng stylethuộc tính với thuộc tính widthhoặc height để chỉ định kích thước của bảng, hàng hoặc cột.
+    Các bảng HTML có thể có các kích thước khác nhau cho mỗi cột, hàng hoặc toàn bộ bảng.
+Chiều rộng bảng HTML
+    Để đặt chiều rộng của bảng, hãy thêm style thuộc tính vào <table>phần tử:
+Lưu ý: Sử dụng tỷ lệ phần trăm làm đơn vị kích thước cho chiều rộng có nghĩa là phần tử này sẽ rộng bao nhiêu so với phần tử cha của nó, 
+trong trường hợp này là phần tử <body> .
+ -->
+<!DOCTYPE html>
+<html>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+
+    <h2>100% wide HTML Table</h2>
+
+    <table style="width:100%">
+        <!-- Để đặt kích thước của một cột cụ thể, hãy thêm style thuộc tính trên phần tử <th>hoặc <td>: -->
+        <tr>
+            <th style="width:70%">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <!-- Để đặt chiều cao của một hàng cụ thể, hãy thêm style thuộc tính trên phần tử hàng của bảng: -->
+        <tr style="height:200px">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+
+</html>

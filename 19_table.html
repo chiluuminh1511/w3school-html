@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /* Để thêm đường viền, hãy sử dụng borderthuộc tính CSS trên table, thvà tdcác phần tử: */
+    table,
+    th,
+    td {
+        border: 1px solid white;
+        /* Để tránh có đường viền kép, hãy đặt thuộc border-collapse tính CSS thành collapse. */
+        border-collapse: collapse;
+        /* Với border-radiusthuộc tính, các đường viền có các góc tròn:  */
+        border-radius: 10px;
+    }
+
+    th,
+    td {
+        background-color: #96D4D4;
+
+    }
+    /* Với border-stylethuộc tính, bạn có thể đặt giao diện của đường viền. */
+    /* Với border-colorthuộc tính, bạn có thể đặt màu của đường viền. */
+</style>
+
+<body>
+
+    <h2>A basic HTML table</h2>
+    <!-- 
+Các bảng HTML cho phép các nhà phát triển web sắp xếp dữ liệu thành các hàng và cột.
+Một bảng trong HTML bao gồm các ô của bảng bên trong các hàng và cột.
+ô bảng Mỗi ô của bảng được xác định bởi một <td>và một </td>thẻ.
+td là viết tắt của dữ liệu bảng.
+Mọi thứ ở giữa <td>và </td>là nội dung của ô trong bảng.
+ -->
+    <table style="width:100%">
+        <!-- 
+        hàng bảng
+        Mỗi hàng của bảng bắt đầu bằng a <tr>và kết thúc bằng một </tr>thẻ.
+        tr là viết tắt của hàng bảng.
+     -->
+        <caption> DEMO </caption>
+        <tr>
+            <!-- Tiêu đề bảng
+            Đôi khi bạn muốn các ô của mình là các ô tiêu đề của bảng. Trong những trường hợp đó, hãy sử dụng <th>thẻ thay vì <td>thẻ:
+            th là viết tắt của tiêu đề bảng.
+            Theo mặc định, văn bản trong <th>phần tử được in đậm và căn giữa, nhưng bạn có thể thay đổi điều đó bằng CSS.
+            -->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+
+</html>

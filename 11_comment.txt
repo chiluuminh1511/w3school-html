@@ -1,0 +1,2 @@
+trong vscode dung ctrl + shift + a để comment
+su dung ctrl + k + u để uncomment 

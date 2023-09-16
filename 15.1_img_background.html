@@ -1,0 +1,34 @@
+<!-- 
+    hình ảnh nền được chỉ định cho hầu hết các thẻ html 
+    style/css background-image
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* sử dụng css */
+        p {
+            background-image: url('img_girl.jpg');
+        }
+
+        body {
+            background-image: url('img_girl.jpg');
+            /* theo mặc định ảnh sẽ được lặp làn cho đến khi tràn viền
+            để tránh việc này có thể thiết lặp thuộc tính background-repeat và gán giá trị no-repeat
+            */
+            background-repeat: no-repeat;
+            /* nếu bạn muốn hình nền bao phủ toàn bộ phần tử bạn có thể đặt thuộc tính background-size thành cover 
+                Ngoài ra, để đảm bảo toàn bộ phần tử luôn được bao phủ, hãy đặt background-attachmentthuộc tính thànhfixed:
+                Bằng cách này, hình nền sẽ bao phủ toàn bộ thành phần mà không bị kéo giãn (hình ảnh sẽ giữ nguyên tỷ lệ ban đầu):
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- sử dụng thuộc tính style -->
+    <p style="background-image: url('images/img_girl.jpg');">
+</body>
+
+</html>
